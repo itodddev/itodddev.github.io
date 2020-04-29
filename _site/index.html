@@ -1,118 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Test Page: Don't Panic</title>
-    <meta charset="utf-8" />
-    <style>
-      /* Global Styles */
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      a {
-        color: #ff0000;
-      }
-      h1 {
-        font-size: 7vw;
-        margin-top: 0;
-      }
-      h2 {
-        font-size: 30px;
-      }
-
-      /* Social Styles */
-      .social-list {
-        list-style: none;
-        padding: 0;
-        text-align: center;
-      }
-      .social-list > li {
-        display: inline-block;
-        margin: 0 0 0.5em;
-      }
-      .social-link {
-        background: rgba(150, 150, 150, 0.5);
-        border-radius: 99px;
-        box-sizing: border-box;
-        color: #fff;
-        display: inline-block;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 1rem;
-        font-weight: bold;
-        height: 2.5em;
-        line-height: 1;
-        padding-top: 0.85em;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-        width: 2.5em;
-      }
-
-      /* Bio Styles */
-      .bio-wrapper {
-        /* width: 500px; */
-        font-size: 24px;
-        overflow: hidden;
-        margin: auto;
-        width: 960px;
-      }
-      .bio-wrapper::after {
-        visibility: hidden;
-        display: block;
-        font-size: 0;
-        content: "";
-        clear: both;
-        height: 0;
-      }
-      .bio-box {
-        border: 1px solid black;
-        border-color: black black red;
-        box-sizing: border-box;
-        float: left;
-        font-size: 1rem;
-        padding: 2%;
-        width: 23%;
-        margin: 40px 1% 0; /* top: 40px l & r: 1% bottom:0 */
-      }
-      .bio-box h3 {
-        font-size: 1.5em;
-        color: #fff;
-        margin: -40px 0 1em;
-        text-align: center;
-      }
-      .bio-box img {
-        width: 100%;
-      }
-      .bio-copy {
-        font-size: 1em;
-        line-height: 1.5;
-      }
-      .bio-copy a {
-        color: green;
-      }
-
-      /* Hero Styles */
-      .full-hero {
-        background-color: #c7dbfc;
-        height: 50vh;
-      }
-
-      .test-box {
-        background: #9db6dd;
-        margin: 50px;
-      }
-      .test-box-nosizing {
-        border: 10px solid #000;
-        padding: 40px;
-      }
-      .test-box-sizing {
-        box-sizing: border-box;
-      }
-    </style>
-  </head>
+  <title>Test Page: Don't Panic</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
 
   <body>
+    <header class="header">
+  <nav>
+    <ul class="header-nav nav-links">
+      <li><a href="/">Home</a></li>
+<li><a href="#">Nav 1</a></li>
+<li><a href="#">Nav 2</a></li>
+<li><a href="#">Nav 3</a></li>
+
+    </ul>
+    <a href="/" class="header-logo">
+      <img src="/images/logo.png" alt="Learn Enough" />
+    </a>
+  </nav>
+</header>
+
     <div class="full-hero hero-home">
       <h1>I'm an h1</h1>
       <ul class="social-list">
@@ -121,8 +30,14 @@
         <li><a class="social-link" href="https://example.com">Gh</a></li>
       </ul>
     </div>
-    <h2>I'm an h2</h2>
-
+    <h2>THE FOUNDERS</h2>
+    <p>
+      Learn Enough to Be Dangerous was founded in 2015 by Michael Hartl, Lee
+      Donahoe, and Nick Merwin. We believe that the kind of technical
+      sophistication taught by the Learn Enough tutorials can benefit at least a
+      billion people, and probably more.
+    </p>
+    <p>Test Paragraph</p>
     <div class="bio-wrapper">
       <div class="bio-box">
         <img src="https://placekitten.com/g/400/400" />
@@ -199,5 +114,21 @@
       web pages to be styled. Other related tutorials can be found at
       <a href="https://learnenough.com/">learnenough.com</a>.
     </p>
+    <footer class="footer">
+  <a href="/" class="footer-logo">
+    <img src="/images/logo.png" alt="Learn Enough" />
+  </a>
+  <nav>
+    <ul class="footer-nav nav-links">
+      <li><a href="/">Home</a></li>
+<li><a href="#">Nav 1</a></li>
+<li><a href="#">Nav 2</a></li>
+<li><a href="#">Nav 3</a></li>
+
+    </ul>
+  </nav>
+  <h3>Learn Enough <span>to Be Dangerous</span></h3>
+</footer>
+
   </body>
 </html>
